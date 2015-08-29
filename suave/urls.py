@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'suave.views.home', name='home'),
 
-    url(r'^api/loja/$', include('loja.urls')),
+    url(r'^api/lojas/$', include('loja.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
 if settings.DEBUG:

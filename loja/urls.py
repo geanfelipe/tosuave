@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = patterns('loja',
     # Examples:
     url(r'^$', 'views.index', name='index'),
+    url(r'^lojas/(?P<id>\d+)/$', 'views.lojas', name='lojas'),
     
     
 )

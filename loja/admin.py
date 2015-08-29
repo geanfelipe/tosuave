@@ -1,3 +1,7 @@
 from django.contrib import admin
+from loja.models import Lojas,Produtos
+from django import forms
 
-# Register your models here.
+admin.site.register(Lojas)
+admin.site.register(Produtos)
+
