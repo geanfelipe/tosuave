@@ -11,6 +11,7 @@ class Lojas(models.Model):
 	numero = models.IntegerField()
 	CEP = models.CharField(max_length=128)
 	complemento = models.CharField(max_length=256)
+	data_criacao= models.DateTimeField(auto_now=True,auto_now_add=True)
 
 	def __unicode__(self):
 		return self.nome
@@ -20,6 +21,7 @@ class Produtos(models.Model):
 	quantidade = models.IntegerField()
 	preco = models.FloatField()
 	loja = models.ForeignKey("Lojas")
-
+	data_criacao= models.DateTimeField(auto_now=True,auto_now_add=True)
+	
 	def __unicode__(self):
 		return self.nome

@@ -7,9 +7,8 @@ from django.conf.urls.static import static
 
 urlpatterns = patterns('loja',
     # Examples:
-    url(r'^$', 'views.index', name='index'),
-    url(r'^lojas/(?P<id>\d+)/$', 'views.lojas', name='lojas'),
-    
+    url(r'^lojas/$', 'views.lojas', name='lojas'), #TRAZ UMA LISTA DE LOJAS
+    url(r'^lojas/(?P<id>\d+)/$', 'views.loja', name='loja'), #TRAZ UMA LOJA ESPECIFICA
+    url(r'^produtos/(?P<id>\d+)/$', 'views.produtos', name='produtos'), #TRAZ PRODUTOS DE UMA LOJA
     
 )
-#to upload of files Muitos sites oferecem a seus usuários com a capacidade de fazer isso - por exemplo, para fazer o upload de uma imagem de perfil

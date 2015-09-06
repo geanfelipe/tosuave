@@ -87,6 +87,8 @@ TEMPLATE_DIRS = [
     TEMPLATE_PATH
 ]
 
+LOGIN_URL='/login/'
+
 STATIC_PATH =  os.path.join(BASE_DIR,'static')
 
 STATIC_URL = '/static/'
